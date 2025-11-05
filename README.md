@@ -282,3 +282,11 @@ If you encounter issues:
 ---
 
 **Built with  for learning AWS, Docker, and Infrastructure as Code**
+## 🚀
+ CI/CD Pipeline Status
+- ✅ GitHub Integration: Active  
+- ✅ CodeBuild: Automated Docker builds
+- ✅ CodeDeploy: Automated EC2 deployments
+- ✅ Pipeline: Fully operational
+
+**Pipeline Test**: Changes pushed to trigger automated deployment!

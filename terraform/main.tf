@@ -322,9 +322,14 @@ resource "aws_iam_role_policy" "codebuild_policy" {
         Action = [
           "s3:GetObject",
           "s3:GetObjectVersion",
-          "s3:PutObject"
+          "s3:PutObject",
+          "s3:GetBucketVersioning"
         ]
-        Resource = "${aws_s3_bucket.codepipeline_artifacts.arn}/*"
+        Resource = [
+          "${aws_s3_bucket.codepipeline_artifacts.arn}/*",
+          "arn:aws:s3:::codepipeline-us-east-1-*",
+          "arn:aws:s3:::codepipeline-us-east-1-*/*"
+        ]
       },
       {
         Effect = "Allow"

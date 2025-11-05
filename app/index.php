@@ -46,7 +46,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo APP_NAME; ?></title>
+    <title><?php echo APP_NAME; ?> - CI/CD Pipeline Test</title>
     <style>
         * {
             margin: 0;
@@ -195,6 +195,7 @@ try {
         <div class="header">
             <h1><?php echo APP_NAME; ?></h1>
             <p>Version <?php echo APP_VERSION; ?> | Dockerized PHP Application</p>
+            <p style="color: #27ae60;">🚀 CI/CD Pipeline Active!</p>
         </div>
         
         <div class="status <?php echo strpos($dbStatus, 'Connected') !== false ? 'connected' : 'error'; ?>">
